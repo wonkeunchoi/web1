@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+<input type="button" value="뒤로가기" onclick="
+history.back();
+">
+
+<br><br>
+<p>1. Array get : document.write(animation[__]);</p>
+
+<script>
+var animation = ["센과치히로", "하울의_움직이는_성", "너의_이름은", "천공의_성_라퓨타","초고속1000센티미"];
+
+document.write(animation[0]);
+document.write(animation[2]);
+</script>
+<br>
+
+<p>2. add : animation.push('____');</p>
+<script>
+	animation.push('히노키오');
+	animation.push('명탐정코난');
+</script>
+<br>
+<p>3. Count : document.write(aniamtion.length);</p>
+
+<span>배열에 저장된 데이터 수 :</span> 
+<script>
+	document.write(animation.length);
+</script>
+<br><br>
+
+<h1>Loop</h1>
+
+<ul>
+	<script>
+		
+		document.write('<li>시작</li>');
+
+		var i = 0;
+		while(i < 3){
+
+		
+		document.write('<li>진행</li>');
+		document.write('<li>진행</li>');
+		i = i + 1;
+	}
+		document.write('<li>완료</li>');
+		
+	</script>
+</ul>
+<img src="array.png" width="300">
+<br><br>
+
+<h2>Loop & Array</h2>
+
+ <script>
+ 	var array = ['drum', 'piano', 'guitar', 'bass', 'singer'];
+ </script>
+
+<ul>
+	<script>
+		var count = 0;
+
+		while(count < array.length){
+			document.write('<li><a href = "http://www.naver.com/'+array[count]+'">'+array[count]+'</a></li>');
+			count = count + 1;
+		}
+	
+	</script>
+</ul>
+<br>
+<img src="array_loop.png" width="550">
+
+</body>
+</html>
+
+
+

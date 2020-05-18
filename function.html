@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+</head>
+<body>
+
+<input type="button" value="뒤로가기" onclick="
+history.back();">
+<br><br>
+<h1>Function</h1>
+<h2>Basic</h2>
+<ul>
+<script>
+
+function two(){
+	document.write('<li>2-1</li>');
+	document.write('<li>2-2</li>');
+}
+	document.write('<li>1</li>');
+	two();
+	document.write('<li>3</li>');
+	two();
+
+</script>
+</ul>
+
+<h1>객체 : Object{}</h1><br>
+<script>
+	var home = {
+		"room1" : "Wonkeun",
+		"room2" : "Juhee",
+		"room3" : "Dad_Mom"
+	};
+	document.write("room1 : " +home.room1+"<br>");
+	document.write("room2 : " +home.room2+"<br>");
+
+	home.bathroom = "shower";
+	document.write("bathroom : "+home.bathroom+"<br>");	
+
+	home["parent"] = "Daddy, Mommy";
+	document.write("parents : "+home["parent"]+"<br>");
+</script>
+<img src="Object.png" width=400>
+</body>
+</html>

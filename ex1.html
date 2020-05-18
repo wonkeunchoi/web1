@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="colors.js">
+
+</script>
+</head>
+
+
+<body>
+
+<h1>Web Page for test</h1>
+
+
+Change color mode : 
+
+
+<input style="border: 40" id="night_day" type="button" value= "night" onclick="
+	dayNightHandler(this);
+">
+
+<br><br>
+
+<ol style="font-size: 2em">
+	<li><a href="ex2.html">HTML</a></li>
+	<li><a href="ex3.html">CSS</a></li>
+	<li><a href="ex4.html">JavaScript</a></li>
+</ol>
+
+
+
+<h2>This is the label</h2>
+<img src="poster.png" width="120" height="180">
+
+
+<br><br>
+<p>Write your own information.</p>
+
+<form action="form_method.html" method="post">
+
+<p>
+	<label for="id_txt">ID : <label>
+	<input id="id_txt" type="text" name="id" placeholder="아이디를 입력해주세요." autofocus>
+</p>
+<p>
+	<label for="password">PW : </label> 
+	<input id="password" type="password" name="pwd" placeholder="비밀번호를 입력하세요.">
+</p>
+
+	<p>Address : <input type="text" placeholder="주소를 입력하세요."></p>
+
+
+	나이 : <input type="number" name="age" min="19" max="100">
+	<br><br> 날짜 관련 정보 입력. <br>
+	<input type="date" name="datev">
+	<input type="month" name="monthv">
+	<input type="week" name="weekv">
+	<input type="time" name="timev">
+	
+	<input type="email" placeholder="이메일을 입력하세요."name="emailv">
+
+	<input type="search" placeholder="검색할 내용을 입력하세요." name="searchv">
+	<input type="tel" name="telv">
+	<br><br>
+	<input type="submit">
+		
+</form>
+
+<br>
+<a href="1.html"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></a>
+
+<table border="2">
+	
+	<tr>
+	<td>Option</td>
+	</tr>
+
+	<tr>
+	<td>dataBase</td> <td>blockChain</td> <td>Android APP</td>
+	</tr>
+</table>
+
+<br>
+Memo
+<form action="http://facebook.com" method="get">
+	
+	<textarea 
+	cols="30" rows="10" name="id">	
+	</textarea>
+
+	<br>
+	<input type="hidden" name="hide" value="hidden_field">
+	<input type="submit" value="제출">
+	<input type="reset" value="재설정">
+
+	
+</form>
+<br><br>
+<h2>Choose your instruments.</h2>
+
+<label>
+<input type="checkbox" name="instruments" value="piano"> Piano
+</label>
+
+<label for="instrument_drum">
+	<input id="instrument_drum" type="checkbox" name="instruments" value="drum"> Drum
+</label>
+
+<label>
+<input type="checkbox" name="instruments" value="guitar"> Guitar
+</label>
+
+<label for="instrument_bass">
+	<input id="instrument_bass" type="checkbox" name="instruments" value="bass"> Bass
+</label>
+
+<br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7yC9yTeO3-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br><br>
+video__________
+<br> 
+<video width="540" controls="loop">
+	<source src="soldier.mp4">
+		<source src="soldier.ogg">
+</video>
+
+<a href="array.html"><h1>Array</h1></a>
+
+<p>1. Array get : document.write(animation[__]);</p>
+
+<script>
+var animation = ["센과치히로", "하울의_움직이는_성", "너의_이름은", "천공의_성_라퓨타","초고속1000센티미"];
+
+document.write(animation[0]);
+document.write(animation[2]);
+</script>
+<br>
+
+<p>2. add : animation.push('____');</p>
+<script>
+	animation.push('히노키오');
+	animation.push('명탐정코난');
+</script>
+<br>
+<p>3. Count : document.write(aniamtion.length);</p>
+
+<span>배열에 저장된 데이터 수 :</span> 
+<script>
+	document.write(animation.length);
+</script>
+<br><br>
+
+<h1>Loop</h1>
+
+<ul>
+	<script>
+		
+		document.write('<li>시작</li>');
+
+		var i = 0;
+		while(i < 3){
+
+		
+		document.write('<li>진행</li>');
+		document.write('<li>진행</li>');
+		i = i + 1;
+	}
+		document.write('<li>완료</li>');
+		
+	</script>
+</ul>
+<img src="array.png" width="300">
+<br><br>
+
+<h2>Loop & Array</h2>
+
+ <script>
+ 	var array = ['drum', 'piano', 'guitar', 'bass', 'singer'];
+ </script>
+
+<ul>
+	<script>
+		var count = 0;
+
+		while(count < array.length){
+			document.write('<li><a href = "http://www.naver.com/'+array[count]+'">'+array[count]+'</a></li>');
+			count = count + 1;
+		}
+	
+	</script>
+</ul>
+<br>
+<img src="array_loop.png" width="550">
+<br><br><br>
+
+<span style="color:blue">함수와 객체의 기능을 알 수 있습니다.</span>
+<h1><a href="function.html">Function</h1></a>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
